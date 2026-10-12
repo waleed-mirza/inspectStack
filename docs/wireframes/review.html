@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Review — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 3 · reviewer</div>
+      <strong>Review · Unit 4 bedroom</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html" aria-current="page">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Review exceptions</h1>
+    <p class="lede">Inspectors submit. Reviewers return or approve. Reports issue only from approved records. Every finding transition records actor and time.</p>
+    <div class="grid cols-main">
+      <aside class="box">
+        <span class="ann">1</span>
+        <h3>Queue</h3>
+        <div class="item"><strong>Unit 4</strong> · submitted</div>
+        <div class="item">Unit 9 · returned</div>
+        <div class="item">Unit 2 · approved</div>
+      </aside>
+      <section class="box">
+        <span class="ann">2</span>
+        <h3>Finding · Life-safety device failed</h3>
+        <p><span class="chip fail">Open · high</span> owner: building manager · due: +24h</p>
+        <div style="position:relative; max-width:420px">
+          <img class="photo" src="smoke-alarm.jpg" alt="Failed smoke alarm evidence" />
+          <span class="stamp">FAIL</span>
+        </div>
+        <p>Inspector note: “No chirp. Dust cap still on.”</p>
+        <p class="row">
+          <a class="btn" href="runner.html">Return to inspector</a>
+          <a class="btn primary" href="report.html">Approve and issue report</a>
+        </p>
+      </section>
+      <aside class="box">
+        <span class="ann">3</span>
+        <h3>Audit</h3>
+        <p>14:02 Maya submitted</p>
+        <p>14:18 Jon opened review</p>
+        <p class="states">Empty: “Nothing to review.”<br />Error: “Approve failed — not issued twice.”<br />Denied: inspector cannot approve own work.</p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>Queue is work, not a generic table of all inspections.</li>
+        <li>Approve is a server transaction that writes the snapshot and then the PDF.</li>
+        <li>Return reopens the runner with the reviewer’s note; template version stays the published one.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

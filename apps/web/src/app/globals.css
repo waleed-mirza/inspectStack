@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import "@inspectstack/ui/styles/tokens.css";
+@source "../../../../packages/ui/src";
+
+html,
+body {
+  min-height: 100%;
+}
+
+@layer base {
+  a {
+    color: inherit;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white;
+  }
+}

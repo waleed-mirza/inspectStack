@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 4 · client · 360px+</div>
+      <strong>Verification IS-10482</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html" aria-current="page">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="grid cols-2">
+      <article class="paper">
+        <span class="ann">1</span>
+        <p class="mono" style="font-size:12px">NORTHLINE PROPERTY GROUP · CONDITION REPORT</p>
+        <h1>12 Harbour St, Unit 4</h1>
+        <p>Move-in · 26 Aug 2026 · Template v1 (immutable)</p>
+        <p><span class="chip fail">1 high finding</span> <span class="chip pass">11 pass</span></p>
+        <div style="position:relative; max-width:360px">
+          <img class="photo" src="smoke-alarm.jpg" alt="Evidence photo on report page" />
+          <span class="stamp">FAIL</span>
+        </div>
+        <p><strong>Smoke alarm — Fail.</strong> Dust cap in place. Finding owned by building manager.</p>
+        <p class="mono">Verification IS-10482 · snapshot 7f3c… · signed Maya Chen, tenant A. Cole</p>
+      </article>
+      <aside class="box">
+        <span class="ann">2</span>
+        <h3>Public / secure share</h3>
+        <p>Link live until revoked. Download is logged.</p>
+        <p class="row">
+          <a class="btn primary" href="report.html">Download PDF</a>
+          <button class="btn" type="button">Revoke link</button>
+        </p>
+        <p class="states">Empty / revoked: “This report is no longer shared.” No leftover images.<br />Error: “Download failed — try again. The issued file is unchanged.”<br />Mismatch: “That verification code does not match.”</p>
+        <p><a href="sites.html">Back to operations</a></p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>Cover uses workspace logo and color. Packs do not invent a second report system.</li>
+        <li>Snapshot hash is of canonical JSON. Identical approvals hash the same (Week 5 gate).</li>
+        <li>Two layouts ship: condition (this) and audit/punch (construction + safety).</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

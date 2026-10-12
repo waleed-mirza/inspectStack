@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sites and assets — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 5 · admin</div>
+      <strong>Sites and assets</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html" aria-current="page">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>12 Harbour St</h1>
+    <p class="lede">Select site/asset → published template version → inspector → due date → notify. Recurring rules create one assignment at the local date. QR launches the tenant-scoped asset.</p>
+    <div class="grid cols-main">
+      <aside class="box">
+        <span class="ann">1</span>
+        <h3>Tree</h3>
+        <p>12 Harbour St</p>
+        <p style="padding-left:12px"><strong>Unit 4</strong></p>
+        <p style="padding-left:12px">Unit 9</p>
+        <p style="padding-left:12px">Common / meters</p>
+      </aside>
+      <section class="box">
+        <span class="ann">2</span>
+        <h3>Unit 4</h3>
+        <div class="field"><strong>External id</strong> <span class="mono">NPG-HARBOUR-4</span></div>
+        <div class="field"><strong>QR</strong> Print sheet · protected launch route · keypad fallback</div>
+        <div class="field"><strong>Assign</strong> Template Property Condition v1 · Maya · due Fri 17:00 Sydney</div>
+        <div class="field"><strong>Recurring</strong> Every move-out · timezone Australia/Sydney · uniqueness on job table</div>
+        <p class="row">
+          <a class="btn primary" href="runner.html">Open as inspector</a>
+          <a class="btn" href="report.html">Last approved report</a>
+        </p>
+      </section>
+      <aside class="box">
+        <span class="ann">3</span>
+        <h3>History</h3>
+        <p>26 Aug approved · IS-10482</p>
+        <p>12 May approved · IS-09811</p>
+        <p class="states">Empty: “No assets. Import ids or add one.”<br />Error: “Schedule not saved — that due already exists.”<br />Denied: client cannot create sites. QR from another tenant does not resolve.</p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>CSV-friendly external ids matter to agencies migrating from spreadsheets.</li>
+        <li>QR is tenant-scoped. Wrong-org scan is permission denied, not a leaked asset.</li>
+        <li>Cron double-fire cannot create two assignments for the same rule+local date.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

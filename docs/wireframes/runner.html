@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Field runner — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 2 · inspector · 360px</div>
+      <strong>12 Harbour St / Unit 4</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html" aria-current="page">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <p class="lede">One-handed. Autosave after each answer. Uploads never block section changes. Submit blocks only if required evidence is missing or permanently failed.</p>
+    <div class="grid cols-2">
+      <div class="phone">
+        <header>
+          <div class="row" style="justify-content:space-between">
+            <span>Bedroom 1 · 4 of 12</span>
+            <span class="chip off">Offline</span>
+          </div>
+          <div class="progress" aria-label="Progress"><span style="width:33%"></span></div>
+        </header>
+        <main>
+          <div class="field">
+            <strong>Smoke alarm</strong>
+            <p class="row">
+              <button class="btn" type="button">Pass</button>
+              <button class="btn danger" type="button">Fail</button>
+              <button class="btn" type="button">N/A</button>
+            </p>
+          </div>
+          <div class="field" style="position:relative">
+            <span class="ann">1</span>
+            <strong>Evidence required</strong>
+            <div style="position:relative">
+              <img class="photo" src="smoke-alarm.jpg" alt="Ceiling smoke detector photographed during inspection" />
+              <span class="stamp">FAIL</span>
+            </div>
+            <p><button class="btn" type="button">Annotate</button> <button class="btn" type="button">Caption</button></p>
+          </div>
+          <div class="field">
+            <strong>Tenant signature</strong>
+            <div class="box" style="height:80px">Sign here</div>
+          </div>
+        </main>
+        <footer class="row" style="justify-content:space-between">
+          <a class="btn" href="builder.html">Sections</a>
+          <a class="btn primary" href="review.html">Submit when online</a>
+        </footer>
+      </div>
+      <aside class="box">
+        <span class="ann">2</span>
+        <h3>Sync and recovery</h3>
+        <p><span class="chip off">Offline</span> answers saved on this phone.</p>
+        <p><span class="chip">Queued</span> 3 answers · 1 photo</p>
+        <p><span class="chip pass">Synced</span> appears after reconnect — once, same operation id.</p>
+        <p><a class="btn" href="runner.html">Open recovery</a> Retry · Export support bundle</p>
+        <p class="states">Empty: “No assignment downloaded.”<br />Error: “Photo failed permanently — replace it to submit.”<br />Denied: client viewer cannot open the runner.<br />Low storage: warn before eviction, keep queue visible.</p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>Fail + photo is the demo beat. Annotation is a layer, not a separate app.</li>
+        <li>Status words match the clip and waitlist. Never “IndexedDB write ok”.</li>
+        <li>Gate: close tab, reopen, add evidence, reconnect, retry interrupt → one inspection.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

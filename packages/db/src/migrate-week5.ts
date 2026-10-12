@@ -1,0 +1,27 @@
+import { readFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { createSqlClient } from "./client";
+
+const file = resolve(
+  dirname(fileURLToPath(import.meta.url)),
+  "../../../supabase/migrations/20260831120000_week5_reports.sql",
+);
+
+export async function applyWeek5Migration() {
+  const sql = createSqlClient();
+  const text = readFileSync(file, "utf8");
+  await sql.unsafe(text);
+  await sql.end({ timeout: 5 });
+}
+
+if (process.argv[1]?.includes("migrate-week5")) {
+  applyWeek5Migration()
+    .then(() => {
+      console.log("Week 5 migration applied.");
+    })
+    .catch((error) => {
+      console.error(error);
+      process.exit(1);
+    });
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>InspectStack — Week 1 wireframes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Week 1 · low-fi · click through</div>
+      <strong>InspectStack wireframes</strong>
+    </div>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-current="page">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Six primary workflows</h1>
+    <p class="lede">Low-fidelity, clickable. Chrome is shared; packs change content, not layout. Desktop frames assume 1280px+; the runner is 360px. Required states are labeled on each screen.</p>
+    <div class="grid cols-3">
+      <a class="box" href="onboarding.html">
+        <span class="ann">6</span>
+        <h3>Onboarding</h3>
+        <p>Create workspace → starter pack → logo → invite. Three-minute demo starts here.</p>
+        <span class="chip">Owner</span>
+      </a>
+      <a class="box" href="builder.html">
+        <span class="ann">1</span>
+        <h3>Builder</h3>
+        <p>Draft → sections/fields/rules → preview → publish immutable version.</p>
+        <span class="chip">Template manager</span>
+      </a>
+      <a class="box" href="runner.html">
+        <span class="ann">2</span>
+        <h3>Field runner</h3>
+        <p>Download bundle → capture offline → sign → sync → submit. Never-cut recovery.</p>
+        <span class="chip off">Inspector · 360px</span>
+      </a>
+      <a class="box" href="review.html">
+        <span class="ann">3</span>
+        <h3>Review</h3>
+        <p>Exceptions → findings → return or approve. Only approved records issue reports.</p>
+        <span class="chip">Reviewer</span>
+      </a>
+      <a class="box" href="report.html">
+        <span class="ann">4</span>
+        <h3>Report</h3>
+        <p>Branded PDF snapshot + verification page. Revoked links expose nothing.</p>
+        <span class="chip">Client</span>
+      </a>
+      <a class="box" href="sites.html">
+        <span class="ann">5</span>
+        <h3>Sites / assets</h3>
+        <p>Hierarchy, QR launch, assign, recurring due dates.</p>
+        <span class="chip">Admin</span>
+      </a>
+    </div>
+    <section class="notes">
+      <h2>How to read these</h2>
+      <ol>
+        <li>Numbered orange badges are callouts, not UI.</li>
+        <li>Buttons with links are the clickable path. Dead boxes are future chrome.</li>
+        <li>Copy uses product language: Offline, Queued, Synced, Fail — not protocol names.</li>
+        <li>Empty, error, permission, and offline variants sit in the right rail or footer of each screen.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

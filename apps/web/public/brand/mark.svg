@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" role="img" aria-labelledby="t">
+  <title id="t">InspectStack</title>
+  <g stroke="#0B0B0B" stroke-width="3.15" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="8">
+    <circle cx="100" cy="100" r="78"/>
+    <path d="M67 32 V156"/>
+    <path d="M89 32 V156"/>
+    <path d="M111 32 V156"/>
+    <path d="M133 32 V156"/>
+    <path d="M55 32 H79"/>
+    <path d="M55 156 H79"/>
+    <path d="M89 52 H133"/>
+    <path d="M89 94 H133"/>
+    <path d="M89 136 H133"/>
+    <path d="M133 52 V94"/>
+    <path d="M89 94 V136"/>
+  </g>
+</svg>

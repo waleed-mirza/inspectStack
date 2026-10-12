@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onboarding — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 6 · owner</div>
+      <strong>Create workspace</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html" aria-current="page">Onboarding</a>
+      <a href="builder.html">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <h1>Onboarding</h1>
+    <p class="lede">Create workspace → choose starter pack → upload logo → invite team. Must unlock the three-minute demo without a second visual system per vertical.</p>
+    <div class="grid cols-main">
+      <aside class="box">
+        <span class="ann">1</span>
+        <h3>Steps</h3>
+        <div class="item"><strong>1. Workspace</strong> · now</div>
+        <div class="item">2. Starter pack</div>
+        <div class="item">3. Brand</div>
+        <div class="item">4. Invite</div>
+      </aside>
+      <section class="box">
+        <span class="ann">2</span>
+        <h3>Northline Property Group</h3>
+        <div class="field"><strong>Workspace name</strong> Northline Property Group</div>
+        <div class="field"><strong>Timezone</strong> Australia/Sydney</div>
+        <div class="field"><strong>Mode</strong> Single company · SaaS available later in settings</div>
+        <div class="field"><strong>Starter pack</strong> Property Condition (selected)</div>
+        <div class="field">
+          <strong>Logo</strong>
+          Dark-safe mark on ink. If missing, show initials “NP” — never a white glyph on white.
+        </div>
+        <div class="field"><strong>Brand color</strong> #215C45</div>
+        <p class="row">
+          <a class="btn" href="onboarding.html">Back</a>
+          <a class="btn primary" href="builder.html">Clone pack and open builder</a>
+        </p>
+      </section>
+      <aside class="box">
+        <span class="ann">3</span>
+        <h3>Invite</h3>
+        <p>maya@northline.example — Inspector</p>
+        <p>jon@northline.example — Reviewer</p>
+        <p class="states">Empty: “No one invited yet. You can inspect alone.”<br />Error: “Invite not sent — mail adapter unreachable.”<br />Denied: client viewer cannot create a workspace.</p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>Stepper stays four steps. No CRM, billing, or “connect Slack”.</li>
+        <li>Pack choice clones Property Condition as a draft template plus seed site “12 Harbour St / Unit 4”.</li>
+        <li>Invites are SMTP via Mailpit locally. Failure does not block the owner from the runner.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

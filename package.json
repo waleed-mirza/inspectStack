@@ -1,0 +1,31 @@
+{
+  "name": "inspectstack",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "dev": "node scripts/sync-web-env.mjs && pnpm --filter @inspectstack/web dev",
+    "env:sync": "node scripts/sync-web-env.mjs",
+    "build": "pnpm --filter @inspectstack/web build",
+    "start": "pnpm --filter @inspectstack/web start",
+    "lint": "pnpm -r --if-present lint",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "test:e2e": "pnpm --filter @inspectstack/web test:e2e",
+    "release:pack": "node scripts/pack-release.mjs",
+    "db:generate": "pnpm --filter @inspectstack/db generate",
+    "db:push": "npx supabase db push",
+    "db:seed": "pnpm --filter @inspectstack/db seed",
+    "db:reset": "pnpm --filter @inspectstack/db reset",
+    "db:migrate:week6": "pnpm --filter @inspectstack/db migrate:week6",
+    "db:migrate:week7": "pnpm --filter @inspectstack/db migrate:week7"
+  },
+  "devDependencies": {
+    "prettier": "3.6.2",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

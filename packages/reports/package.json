@@ -1,0 +1,27 @@
+{
+  "name": "@inspectstack/reports",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "goldens": "tsx src/generate-goldens.ts"
+  },
+  "dependencies": {
+    "@inspectstack/domain": "workspace:*",
+    "@react-pdf/renderer": "catalog:",
+    "pdf-lib": "catalog:",
+    "react": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "24.5.2",
+    "@types/react": "19.2.7",
+    "tsx": "4.20.6",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

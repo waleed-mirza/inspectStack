@@ -1,0 +1,17 @@
+# Week 2 hosted demo on Netlify (ADR 0007). Point at your own site + Supabase project.
+# Do not pin @netlify/plugin-nextjs — Netlify auto-updates the Next adapter.
+
+[build]
+  command = "pnpm --filter @inspectstack/web build"
+  publish = "apps/web/.next"
+
+[build.environment]
+  NODE_VERSION = "24"
+  PNPM_FLAGS = "--shamefully-hoist"
+  NEXT_PLUGIN_FORCE_RUN = "true"
+
+[build.processing]
+  skip_processing = true
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

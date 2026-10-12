@@ -1,0 +1,52 @@
+{
+  "name": "@inspectstack/web",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack --hostname 127.0.0.1 --port 3000",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1 --port 3000",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "catalog:",
+    "@dnd-kit/sortable": "catalog:",
+    "@dnd-kit/utilities": "catalog:",
+    "@inspectstack/config": "workspace:*",
+    "@inspectstack/db": "workspace:*",
+    "@inspectstack/domain": "workspace:*",
+    "@inspectstack/reports": "workspace:*",
+    "@inspectstack/testkit": "workspace:*",
+    "@inspectstack/ui": "workspace:*",
+    "@serwist/next": "catalog:",
+    "@supabase/ssr": "catalog:",
+    "@supabase/supabase-js": "catalog:",
+    "@tanstack/react-query": "catalog:",
+    "browser-image-compression": "catalog:",
+    "dexie": "catalog:",
+    "konva": "catalog:",
+    "lucide-react": "catalog:",
+    "next": "catalog:",
+    "qrcode": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:",
+    "react-konva": "catalog:",
+    "serwist": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@tailwindcss/postcss": "catalog:",
+    "@types/node": "24.5.2",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "@playwright/test": "catalog:",
+    "axe-core": "catalog:",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.3.3",
+    "tailwindcss": "catalog:",
+    "typescript": "catalog:"
+  }
+}

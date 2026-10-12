@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Builder — InspectStack wireframe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Source+Sans+3:wght@400;500;600&family=Spline+Sans+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="wf.css" />
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="crumb">Workflow 1 · template manager · 1280px+</div>
+      <strong>Property Condition · draft</strong>
+    </div>
+    <nav>
+      <a href="index.html">Map</a>
+      <a href="onboarding.html">Onboarding</a>
+      <a href="builder.html" aria-current="page">Builder</a>
+      <a href="runner.html">Runner</a>
+      <a href="review.html">Review</a>
+      <a href="report.html">Report</a>
+      <a href="sites.html">Sites / assets</a>
+    </nav>
+  </header>
+  <main class="page">
+    <div class="row" style="margin-bottom:16px">
+      <span class="chip">Draft</span>
+      <span class="chip">v0 · not published</span>
+      <a class="btn" href="runner.html">Preview as inspector</a>
+      <a class="btn primary" href="review.html">Publish v1 (immutable)</a>
+    </div>
+    <div class="grid cols-main">
+      <aside class="box">
+        <span class="ann">1</span>
+        <h3>Sections</h3>
+        <div class="item">≡ Meta</div>
+        <div class="item">≡ Entry / hallway</div>
+        <div class="item"><strong>≡ Bedrooms</strong></div>
+        <div class="item">≡ Bath</div>
+        <div class="item">≡ Signatures</div>
+        <p><button class="btn" type="button">Add section</button></p>
+      </aside>
+      <section class="box">
+        <span class="ann">2</span>
+        <h3>Bedroom 1</h3>
+        <div class="field"><strong>Smoke alarm</strong> type: pass / fail / n/a · required evidence on fail</div>
+        <div class="field"><strong>Walls &amp; ceiling</strong> rating 1–5</div>
+        <div class="field"><strong>Photos</strong> group · min 0 · max 8 · caption</div>
+        <div class="field">
+          <strong>Rule</strong>
+          WHEN Smoke alarm = Fail THEN create finding “Life-safety device failed” AND require photo.
+          <div class="states">Readable summary. Circular rules blocked on save.</div>
+        </div>
+      </section>
+      <aside class="box">
+        <span class="ann">3</span>
+        <h3>Field config</h3>
+        <p>Keyboard: ↑↓ reorder, Enter edit, Esc close.</p>
+        <p class="states">Empty: “Clone a starter pack or add a section.”<br />Error: “Could not save draft — still on this device until retry.”<br />Denied: inspector sees read-only preview, not this chrome.<br />Online only: no offline editing in v1.</p>
+      </aside>
+    </div>
+    <section class="notes">
+      <h2>Callouts</h2>
+      <ol>
+        <li>Section list is the structure. Drag handle is visible; not icon-only.</li>
+        <li>Canvas is the selected section. Fields are real types from the PRD, not a generic “input”.</li>
+        <li>Publish creates an immutable version. Editing after publish opens a new draft. Historical inspections keep v1.</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

@@ -8,6 +8,7 @@ All notable changes to InspectStack. Version is `VERSION` and `APP_VERSION` in `
 - Landing is an open-source project page: view source, MIT grant, demo walkthrough.
 - `CONTRIBUTING.md` and `SECURITY.md` added. Support is GitHub issues.
 - Publish cleanup: personal email and live Supabase/Netlify identifiers replaced with placeholders; sales/`marketing` assets, operating-plan Word doc, and `.grok/` removed from the tree; root `package.json` declares `"license": "MIT"`; production build tolerates placeholder env via dynamic `/app` rendering.
+- Follow-up MIT wording cleanup: removed leftover Lemon/sale-store notes from release docs; restored `docs/release/v1.0.0.md`; reworded buyer/sale language in PRD, ADRs, and install docs; `"license": "MIT"` on all workspace packages.
 - GitHub remains private until the founder publishes it.
 
 ## 1.0.1 — 2026-09-07

@@ -20,7 +20,7 @@ v1 backup is the Supabase project plus this git repo. There is no in-app backup 
 4. Restore object storage into `evidence` **or** run `pnpm db:reset` to rebuild demo bytes.
 5. Copy env, `pnpm env:sync`, `pnpm dev` or deploy.
 
-## Restore (buyer production — after they have a prod project)
+## Restore (operator production — after they have a prod project)
 
 Point `DATABASE_URL` and Supabase keys at the restored project. Do not run `pnpm db:reset` on production data. Re-upload storage objects with the same keys. Confirm Auth redirect URLs.
 

@@ -21,6 +21,6 @@ PNG or JPEG. Stored at `{orgId}/branding/logo.{ext}`. Dark-safe: the plate sits 
 
 ## Demo beat
 
-Northline can be retinted (Week 7 used `#7A2418` and “Property checks”). Westfield stays its own color. Impersonation is not required for a buyer eval.
+Northline can be retinted (Week 7 used `#7A2418` and “Property checks”). Westfield stays its own color. Impersonation is not required for an install eval.
 
 Starter packs change **content**, not chrome. Do not fork the design system per vertical.

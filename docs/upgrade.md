@@ -6,14 +6,14 @@ v1.0.1 is the current maintenance archive (1.0.0 was 1 Sep 2026). Core runtime d
 
 SQL files in `supabase/migrations` are append-only. Never edit a migration that may already be applied. Add a new timestamped file. See [migration.md](migration.md).
 
-`pnpm db:push` applies pending SQL via the Supabase CLI. If the CLI cannot push (403 on this founder machine historically), the week-scoped `pnpm db:migrate:week7` style scripts apply `IF NOT EXISTS` SQL through the app database client. Buyers should prefer `db push` when their login role allows it.
+`pnpm db:push` applies pending SQL via the Supabase CLI. If the CLI cannot push (403 on this founder machine historically), the week-scoped `pnpm db:migrate:week7` style scripts apply `IF NOT EXISTS` SQL through the app database client. Operators should prefer `db push` when their login role allows it.
 
 ## App
 
 1. Read `CHANGELOG.md` and `docs/freeze.md`.
 2. Install with the lockfile: `pnpm install --frozen-lockfile`.
 3. Apply migrations.
-4. `pnpm db:reset` only on **demo** data. Never reset a buyer’s production database.
+4. `pnpm db:reset` only on **demo** data. Never reset an operator’s production database.
 5. Rebuild the web app (`next build --webpack`).
 6. Confirm four report goldens still match if you touch `packages/reports`: `pnpm --filter @inspectstack/reports test`.
 

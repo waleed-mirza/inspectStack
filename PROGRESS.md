@@ -17,7 +17,7 @@ Never-cut: offline integrity, tenant isolation, installability, report quality.
 | Phase                | Product. Design system locked. Core deps frozen except security. MIT publish cleanup done on main.                                                                                                            |
 | Allowed product work | MIT publish readiness. Do not add product prices. Do not flip the repo public until asked. Trademark still gates a public product name. No **prod** Supabase. No paid APIs. |
 | Blocked until        | Public GitHub flip waits for an explicit ask. Trademark/domain clearance still gates a public name.                                                            |
-| Last updated         | 12 Oct 2026 (orphan single-commit main after MIT scrub; history rewrite approved) |
+| Last updated         | 17 Oct 2026 (MIT wording cleanup: docs, package licenses, release notes) |
 
 ## How to use
 
@@ -54,21 +54,21 @@ Done before Week 1. Not a product week.
 
 ## Week 1 — Validate, position, freeze (26 Aug–1 Sep 2026)
 
-**Outcome:** evidence that both source-code buyers and field businesses understand the offer, plus a buildable v1 spec.
+**Outcome:** evidence that operators and field businesses understand the offer, plus a buildable v1 spec.
 
 **Hours:** Product+UX 8 · Engineering 14 · Quality 4 · Sales+content 10.
 
 | Item                                                                                                         | Status  | Evidence                                                                                                                                                          |
 | ------------------------------------------------------------------------------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| One-sentence positioning, buyer matrix, non-goals, launch definition                                         | done    | `docs/prd.md`                                                                                                                                                     |
-| ≥8 source-code buyer interviews                                                                              | skipped | `DECISIONS.md` 26 Aug 2026 (marketing folder removed)                                                                                                             |
+| One-sentence positioning, audience matrix, non-goals, launch definition                                      | done    | `docs/prd.md`                                                                                                                                                     |
+| ≥8 source-code operator interviews                                                                           | skipped | `DECISIONS.md` 26 Aug 2026 (marketing folder removed)                                                                                                             |
 | ≥8 end-user prospect interviews                                                                              | skipped | `DECISIONS.md` 26 Aug 2026 (marketing folder removed)                                                                                                             |
 | Six primary workflows mapped + low-fi wireframes (builder, runner, review, report, sites/assets, onboarding) | done    | `docs/workflows.md`; `docs/wireframes/index.html` (click path verified in browser)                                                                                |
 | ADRs: tenancy, storage, auth, PDF, offline sync + pinned dependency versions                                 | done    | `docs/adrs/0001`–`0006`                                                                                                                                           |
 | P0/P1/P2 backlog with P0 estimates                                                                           | done    | `docs/backlog.md` (44 P0 stories, hours on each)                                                                                                                  |
 | Four starter-pack outlines (Property, Vehicle, Construction, Workplace Safety)                               | done    | `docs/starter-packs.md`                                                                                                                                           |
 | Waitlist page + 45s concept clip + short survey                                                              | done    | Historical waitlist/survey (removed from published tree 12 Oct 2026); `DECISIONS.md` |
-| Objection / buyer-language log                                                                               | done    | Historical buyer-language notes (removed 12 Oct 2026); `DECISIONS.md`                                                             |
+| Objection / prospect-language log                                                                            | done    | Historical prospect-language notes (removed 12 Oct 2026); `DECISIONS.md`                                                          |
 
 **Release gate:** skipped / waived 26 Aug 2026 (`DECISIONS.md`). No live pain confirmations on file.
 
@@ -163,7 +163,7 @@ Product work started 31 Aug 2026 (ahead of calendar). Resume: `docs/week-6-build
 
 ## Week 7 — Commercially harden and freeze (7–13 Oct 2026)
 
-**Outcome:** the same codebase can be sold to a single company or a SaaS founder, with secure roles, branding, plan limits, and administration.
+**Outcome:** the same codebase can be deployed for a single company or as multi-tenant SaaS, with secure roles, branding, plan limits, and administration.
 
 | Item                                                                                                | Status | Evidence                                                                                                                                                                                                                                                                    |
 | --------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -179,13 +179,13 @@ Product work started 31 Aug 2026 (ahead of calendar). Resume: `docs/week-6-build
 
 ## Week 8 — Release candidate (14–20 Oct 2026)
 
-**Outcome:** a buyer can evaluate, install, customize, deploy, and troubleshoot from documentation and videos alone.
+**Outcome:** an operator can evaluate, install, customize, deploy, and troubleshoot from documentation and videos alone.
 
 | Item                                                                                                                       | Status | Evidence                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Full unit/integration/component/E2E across supported browsers and viewports                                                | done   | `pnpm test` 93 passed. `pnpm test:e2e` Chromium 1280+360: 12 passed / 5 skipped. `pnpm typecheck` pass. Firefox/WebKit documented, not CI.                                                     |
 | Two clean installs timed (native local + one managed cloud)                                                                | done   | `docs/install-rehearsal.md`. Local inspector login 2.0s to jobs + issued `IS-FG72H92S`. Netlify login 10.6s to jobs (`(screenshot evidence removed 12 Oct 2026)`). Netlify reports wait for this RC on `main`. |
-| Docs: Quick Start, architecture, config, deploy, storage/email, branding, packs, testing, upgrade, backup, troubleshooting | done   | `docs/README.md` buyer set. Start: `docs/quick-start.md`.                                                                                                                                      |
+| Docs: Quick Start, architecture, config, deploy, storage/email, branding, packs, testing, upgrade, backup, troubleshooting | done   | `docs/README.md` install set. Start: `docs/quick-start.md`.                                                                                                                                    |
 | Sample env, seed/reset, migration policy, changelog, support bundle, versioned archive                                     | done   | `.env.example`, `docs/migration.md`, `CHANGELOG.md`, support bundle `productVersion`, `pnpm release:pack`.                                                                                     |
 | Demo data polish, empty/loading/error, keyboard, a11y, throttled-mobile performance                                        | done   | Skip links, extra `loading.tsx`, leftover Week N copy removed, queued stamp `#8a5200` (AA), axe on login+jobs, throttled 360 E2E. `(screenshot evidence removed 12 Oct 2026)`.                            |
 | v1.0.0-rc.1 archive                                                                                                        | done   | `dist/inspectstack-1.0.0-rc.1.zip` SHA-256 `75941799e2827dba0e43a59eec2c153359680c734ea40b511a7d1ef7def9ac00`. `docs/release/v1.0.0-rc.1.md`.                                                  |
@@ -204,10 +204,10 @@ Product work started 31 Aug 2026 (ahead of calendar). Resume: `docs/week-6-build
 | Final source archive, checksums, release notes, third-party notices, license, support policy       | done   | `LICENSE`, `THIRD_PARTY_NOTICES.md`, `docs/support.md`, `docs/release/v1.0.0.md`. Zip `dist/inspectstack-1.0.0.zip` SHA-256 `0cc57ad826d00929b6e189569a8f2f4c2dab3b0798f43cbde2202b4151ad8b4a`. No `.env.local` / `.auth` / `node_modules` in the archive. |
 | 2–3 min overview, 8–12 min setup, four vertical clips, screenshots, report samples, feature matrix | done   | Product stills/overview now under `apps/web/public/listing/`. Listing pack markdown removed 12 Oct 2026.                                                               |
 | Listing copy                                                                                       | done   | Listing copy removed 12 Oct 2026                                                                                                                                                                                                                                |
-| FAQ and post-purchase emails                                                                       | done   | FAQ/emails removed 12 Oct 2026 (MIT; GitHub issues for support).                                                                                                                                                                                               |
+| FAQ and onboarding emails                                                                          | done   | FAQ/emails removed 12 Oct 2026 (MIT; GitHub issues for support).                                                                                                                                                                                               |
 | v1.0.0 launch candidate                                                                            | done   | `VERSION` `1.0.0`. `pnpm release:pack`.                                                                                                                                                                                                                    |
 
-**Gate:** product path met 1 Sep 2026 — listing claims ≤ feature matrix; archive download tested (pack + checksum sidecar + zip listing). Two fresh buyers watching the overview, and the 7-day human beta, are a founder send (`DECISIONS.md` 1 Sep 2026).
+**Gate:** product path met 1 Sep 2026 — public claims ≤ feature matrix; archive download tested (pack + checksum sidecar + zip listing). Two fresh evaluators watching the overview, and the 7-day human beta, are a founder send (`DECISIONS.md` 1 Sep 2026).
 
 ---
 
@@ -223,6 +223,7 @@ Product work started 31 Aug 2026 (ahead of calendar). Resume: `docs/week-6-build
 | Outreach: 50 agencies/founders + 30 consultants/operators with follow-up dates                 | skipped | Sales outreach retired with the paid source offer. |
 | Daily support/bug triage, funnel events, public changelog, first maintenance release scheduled | done | `docs/support.md` points at GitHub issues. `SECURITY.md` holds private reports. Changelog on `/`. **v1.0.1** already shipped. No funnel analytics. |
 | MIT publish scrub (secrets, sales assets, placeholder build)                                   | done | Personal email + live Supabase/Netlify IDs → placeholders. Removed `marketing/`, plan `.docx`, `.grok/`, Netlify link scripts. Root `package.json` `"license": "MIT"`. `pnpm --filter @inspectstack/web build` with `.env.example` placeholders passes. Gitleaks clean on source tree. |
+| MIT wording cleanup (docs, packages, release notes)                                            | done | Lemon/sale-store notes removed from `docs/release/v1.0.1.md`. Restored `docs/release/v1.0.0.md`. Buyer/sale present-tense wording reworded. `"license": "MIT"` on all workspace packages. `pnpm lint` / `typecheck` / `test` green 17 Oct 2026. |
 
 **Gate:** someone can read the MIT grant, clone the source, build with placeholders, and follow Quick Start with their own Supabase project.
 

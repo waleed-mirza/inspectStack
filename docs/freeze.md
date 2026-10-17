@@ -24,7 +24,7 @@ P2 stays later: optional AI/OCR behind provider interfaces, native wrappers, map
 
 ## Known limitations
 
-- Live buyer interviews were skipped; pricing and listing claims stay hypothetical until beta.
+- Live prospect interviews were skipped; public claims stay tied to shipped functionality.
 - Email from-name is recorded on invites; the linked Supabase project mailbox still sends the message. No third-party ESP.
 - Rate limits are per-instance database buckets, not a global edge WAF.
 - Service worker injection is production `next build --webpack` only; `next dev --turbopack` does not install `/sw.js`.
@@ -33,7 +33,7 @@ P2 stays later: optional AI/OCR behind provider interfaces, native wrappers, map
 - Super-admin in the demo is `owner@inspectstack.demo` (`users.is_platform_admin`). There is no silent god-mode: impersonation requires a reason and writes an audit event the operator can see.
 - **Prod** Supabase project is still not created. Week 8 ships clean-install docs (native local + Netlify). Docker stays out.
 - License, third-party notices, and support policy shipped in Week 9. As of 12 Oct 2026, `LICENSE` is MIT. `docs/support.md` points at GitHub issues.
-- The landing does not sell a license. Public host is the Netlify free domain. **Prod** Supabase is not created. GitHub stays private until the founder flips it.
+- The landing is an MIT project page, not a storefront. Public host is the Netlify free domain. **Prod** Supabase is not created. GitHub stays private until the founder flips it.
 - `v1.0.1` (7 Sep 2026) is a security/defect patch. `esbuild` via `drizzle-kit` stays moderate and dev-only.
 
 ## Release notes (Week 7)

@@ -6,7 +6,7 @@
 
 ## Context
 
-InspectStack is sold in single-company and multi-tenant SaaS modes from one codebase. Cross-tenant data exposure is a never-cut failure. Buyers will host this themselves; tenancy cannot depend on a vendor-specific RLS product.
+InspectStack supports single-company and multi-tenant SaaS deployments from one codebase. Cross-tenant data exposure is a never-cut failure. Operators self-host; tenancy cannot depend on a vendor-specific RLS product.
 
 ## Decision
 
@@ -29,6 +29,6 @@ SaaS vs single-company is a deployment/plan flag (`APP_MODE` + plan limits), not
 
 ## Alternatives rejected
 
-- Postgres RLS as the only control: portable Docker buyers may not operate RLS well; we still may add RLS later as defense in depth, never as the sole check.
-- Separate database per tenant in v1: operationally too heavy for the template buyer.
+- Postgres RLS as the only control: portable Docker deployments may not operate RLS well; we still may add RLS later as defense in depth, never as the sole check.
+- Separate database per tenant in v1: operationally too heavy for a self-hosted template.
 - Path-param org without membership check: trivial to swap.

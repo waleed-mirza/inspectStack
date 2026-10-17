@@ -13,7 +13,7 @@ Frozen 26 Aug 2026. Hours are engineering estimates for one experienced full-sta
 | P0-05 | Drizzle schema + migrations for tenant, user, site, asset, template, inspection, media, finding, report, sync, audit                                   | 2    | 6     | Domain tables                        |
 | P0-06 | Tenant-scoped repositories + first cross-tenant negative tests                                                                                         | 2    | 4     | Never-cut isolation                  |
 | P0-07 | Supabase Storage adapter + project email for invites/magic links                                                                                       | 2    | 4     | Dev/prod = two projects              |
-| P0-08 | App shell, responsive nav, tokens, dark-safe logo, empty/loading/error, demo personas                                                                  | 2    | 5     | Buyer-familiar chrome                |
+| P0-08 | App shell, responsive nav, tokens, dark-safe logo, empty/loading/error, demo personas                                                                  | 2    | 5     | Operator-familiar chrome             |
 | P0-09 | First hosted demo deployment                                                                                                                           | 2    | 3     | Something to show                    |
 | P0-10 | Template library: create, clone starter, list, retire                                                                                                  | 3    | 4     | Entry to builder                     |
 | P0-11 | Section/field CRUD, dnd-kit reorder, keyboard, field config panel                                                                                      | 3    | 8     | Core authoring                       |
@@ -43,17 +43,17 @@ Frozen 26 Aug 2026. Hours are engineering estimates for one experienced full-sta
 | P0-35 | Feature freeze notes, v1.1 backlog, known limitations                                                                                                  | 7    | 2     | Stop expanding                       |
 | P0-36 | Full test matrix (unit/integration/component/E2E, browsers, 1280 / 360)                                                                                | 8    | 8     | Release candidate                    |
 | P0-37 | Two timed clean installs (native local + one managed cloud)                                                                                            | 8    | 4     | <20 min gate                         |
-| P0-38 | Docs: Quick Start, architecture, config, deploy, storage/email, branding, packs, testing, upgrade, backup, troubleshooting                             | 8    | 8     | Buyer without us                     |
-| P0-39 | Sample env, seed/reset, migration policy, changelog, support bundle, versioned archive                                                                 | 8    | 4     | Sale package                         |
+| P0-38 | Docs: Quick Start, architecture, config, deploy, storage/email, branding, packs, testing, upgrade, backup, troubleshooting                             | 8    | 8     | Install without us                   |
+| P0-39 | Sample env, seed/reset, migration policy, changelog, support bundle, versioned archive                                                                 | 8    | 4     | Release archive                      |
 | P0-40 | Demo polish: empty/loading/error, keyboard, a11y, throttled-mobile                                                                                     | 8    | 4     | First impression                     |
 | P0-41 | 7-day private beta triage (blockers, data-loss, report, install only)                                                                                  | 9    | 8     | Real use                             |
-| P0-42 | Launch candidate archive, checksums, license, third-party notices, support policy                                                                      | 9    | 4     | What they buy                        |
-| P0-43 | Videos (2–3 min overview, 8–12 min setup, four vertical clips), screenshots, report samples, feature matrix                                            | 9    | 8     | Listing proof                        |
-| P0-44 | Listing copy, FAQ, and onboarding email                                                                                                                 | 9    | 5     | Storefront                           |
+| P0-42 | Launch candidate archive, checksums, license, third-party notices, support policy                                                                      | 9    | 4     | What they get                        |
+| P0-43 | Videos (2–3 min overview, 8–12 min setup, four vertical clips), screenshots, report samples, feature matrix                                            | 9    | 8     | Project proof                        |
+| P0-44 | Listing copy, FAQ, and onboarding email                                                                                                                 | 9    | 5     | Project page                         |
 
-**P0 total: ~230 hours** across Weeks 2–9 (~35–45 h/week including QA/docs/sales mix). If over, cut from P0-30 (corrective portal depth), P0-32 (metering depth), or extra video cut-downs — never from P0-06, P0-18, P0-21, P0-24, P0-34, P0-37.
+**P0 total: ~230 hours** across Weeks 2–9 (~35–45 h/week including QA/docs mix). If over, cut from P0-30 (corrective portal depth), P0-32 (metering depth), or extra video cut-downs — never from P0-06, P0-18, P0-21, P0-24, P0-34, P0-37.
 
-## P1 — after sale readiness (v1.1)
+## P1 — after launch readiness (v1.1)
 
 Frozen out of v1 at Week 7 (`docs/freeze.md`). Do not start these until after launch or a `DECISIONS.md` row.
 
@@ -62,7 +62,7 @@ Frozen out of v1 at Week 7 (`docs/freeze.md`). Do not start these until after la
 | P1-01 | CSV import/export                        | Migration          |
 | P1-02 | Template import / mini marketplace files | Agency reuse       |
 | P1-03 | Webhooks + Zapier/Make examples          | Integration        |
-| P1-04 | Additional report layouts                | Broader buyers     |
+| P1-04 | Additional report layouts                | Broader operators  |
 | P1-05 | i18n / multilingual UI framework         | Non-EN operators   |
 | P1-06 | Custom domains                           | SaaS polish        |
 | P1-07 | Deeper plan metering                     | SaaS billing later |

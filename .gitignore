@@ -6,7 +6,7 @@ test-results/
 playwright-report/
 blob-report/
 dist/
-release/
+/release/
 apps/web/playwright-report/
 apps/web/test-results/
 apps/web/e2e/.auth/

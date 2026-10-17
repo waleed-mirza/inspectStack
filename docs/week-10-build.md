@@ -31,7 +31,7 @@ Never-cut: offline integrity, tenant isolation, installability, report quality.
 Human loops that stay founder-operated:
 
 - Live 7-day beta.
-- Two fresh buyers watching the overview.
+- Two fresh evaluators watching the overview.
 - Named outreach list (50 + 30) and sending it.
 - Remaining films (setup VO, vehicle / construction / safety).
 
@@ -73,7 +73,7 @@ Status vocabulary: `not started` · `in progress` · `done` · `blocked`.
 | Status   | `skipped`                                           |
 | Evidence | Removed 12 Oct 2026 with the paid offer.            |
 
-### W10-S3 — Checkout URLs on the landing
+### W10-S3 — Paid checkout on the landing
 
 |          |                                                     |
 | -------- | --------------------------------------------------- |

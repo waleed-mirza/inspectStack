@@ -1,6 +1,6 @@
 /* InspectStack design system
    Field clipboard / NCR form / wayfinding — not cream-editorial, not dark-neon, not newspaper.
-   Buyers override --org-brand (and logo). Chrome structure, type, and spacing stay put.
+   Operators override --org-brand (and logo). Chrome structure, type, and spacing stay put.
    Use these tokens; do not invent hex, font stacks, or tracking on a page. */
 
 @theme {

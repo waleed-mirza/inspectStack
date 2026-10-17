@@ -2,9 +2,9 @@
 
 Content and sample reports change per pack. Chrome, tokens, and runner do not. Seed as four demo workspaces in Week 3; golden PDFs in Week 5.
 
-Buyer clone path: `/app/templates` → clone pack rail. Apply a brand in [branding.md](branding.md) after clone.
+Clone path: `/app/templates` → clone pack rail. Apply a brand in [branding.md](branding.md) after clone.
 
-Demo workspace naming in seed data: **Northline Property Group**, **Hale Fleet**, **Meridian Build**, **Arden Safety**. Replace with buyer brand in onboarding.
+Demo workspace naming in seed data: **Northline Property Group**, **Hale Fleet**, **Meridian Build**, **Arden Safety**. Replace with your brand in onboarding.
 
 ---
 

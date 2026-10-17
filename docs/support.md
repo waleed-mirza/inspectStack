@@ -1,6 +1,6 @@
 # Support
 
-InspectStack is MIT-licensed source. There is no paid support window and no license SKU.
+InspectStack is MIT-licensed source. There is no paid support window and no commercial license tier.
 
 ## Where to ask
 

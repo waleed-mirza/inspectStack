@@ -40,7 +40,7 @@ Field types, conditionals, screens, and status machines: see `docs/workflows.md`
 - Paid AI, OCR, map tiles, SMS, third-party PDF APIs, native push, or specialized inspection APIs
 - Native iOS / Android apps (excellent PWA only; native packaging is later)
 - Arbitrary real-time collaborative editing (version templates; publish / clone)
-- Regulated compliance certification (configurable audit trails; buyers own legal validation)
+- Regulated compliance certification (configurable audit trails; operators own legal validation)
 - In-app payment billing unless essential to the demo; provide integration points
 - Offline template editing
 - Public evidence buckets
@@ -49,13 +49,13 @@ An excluded item enters v1 only with a `DECISIONS.md` row.
 
 ## Launch definition (measurable)
 
-A buyer, without our help, understands the vertical demo, trusts the architecture, purchases the correct license, installs, applies their brand, runs an offline inspection, and issues a client-ready report.
+An operator, without our help, clones the MIT source, understands the vertical demo, trusts the architecture, installs, applies their brand, runs an offline inspection, and issues a client-ready report.
 
 | Milestone | When | Passes when |
 | --------- | ---- | ----------- |
 | Installable foundation | End of Week 8 | Clone, configure, seed, deploy, branded PDF without our help |
-| Launch package | End of Week 9 | ≥20 real end-to-end beta inspections; listing claims ≤ shipped functionality |
-| Public sale | End of Week 10 | Direct storefront live; suitable marketplaces submitted; 30-day pipeline scheduled |
+| Launch package | End of Week 9 | ≥20 real end-to-end beta inspections; public claims ≤ shipped functionality |
+| Public open-source release | End of Week 10 | MIT source available; landing matches the grant; install docs stand alone |
 | First-30-day operating targets | After launch | 500 qualified landing visits, 10%+ demo-start, useful clone/install rate, median first local run <20 min, support via GitHub issues |
 
 These are operating targets, not forecasts.
@@ -66,7 +66,7 @@ An operator applies logo and color → clones Property Condition pack → runs a
 
 ## Validation status
 
-Live Week 1 interviews: **skipped** (`DECISIONS.md` 26 Aug 2026). Week 1 purchase-intent gate **waived**. Week 3 8+8 interview rule **deferred**.
+Live Week 1 interviews: **skipped** (`DECISIONS.md` 26 Aug 2026). Week 1 validation gate **waived**. Week 3 8+8 interview rule **deferred**.
 
 ## Related
 

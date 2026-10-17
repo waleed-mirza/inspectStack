@@ -2,6 +2,7 @@
   "name": "@inspectstack/web",
   "version": "0.0.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack --hostname 127.0.0.1 --port 3000",
     "build": "next build --webpack",

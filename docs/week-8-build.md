@@ -2,7 +2,7 @@
 
 Resume contract for sessions that may stop at a usage-quota reset. **Do not skip ahead.** Finish the current step, mark it `done` here and in `PROGRESS.md`, then start the next step.
 
-**Stories:** P0-36–P0-40 + `v1.0.0-rc.1` archive. **Gate:** a buyer can clone, configure, seed, deploy, and generate a branded report from documentation alone. Live 4-of-5 human evaluators is a founder send of this RC (see `docs/evaluator.md`); product week records a timed install + an internal dry-run.
+**Stories:** P0-36–P0-40 + `v1.0.0-rc.1` archive. **Gate:** an operator can clone, configure, seed, deploy, and generate a branded report from documentation alone. Live 4-of-5 human evaluators is a founder send of this RC (see `docs/evaluator.md`); product week records a timed install + an internal dry-run.
 
 Never-cut: offline integrity, tenant isolation, installability, report quality.
 
@@ -37,7 +37,7 @@ Two install profiles (plan said Docker-local; this repo does not use Docker):
 1. **Native local** — Node 24 LTS + pnpm + linked **dev** Supabase project.
 2. **Managed cloud** — Netlify + the same **dev** Supabase project. Docs also describe Vercel as the second managed host.
 
-UI language: jobs / tickets / reports / workspace / brand. Never JWT, RLS, or bucket in buyer-facing copy.
+UI language: jobs / tickets / reports / workspace / brand. Never JWT, RLS, or bucket in operator-facing copy.
 
 Demo beat to protect: clone → env → seed → sign in as owner → Jobs shows NL tickets → Reports shows an issued snapshot → public verify page.
 
@@ -84,13 +84,13 @@ Status vocabulary: `not started` · `in progress` · `done` · `blocked`.
 | Stories | P0-39                                                                                         |
 | Files   | `.env.example`, `CHANGELOG.md`, `docs/migration.md`, `VERSION`, support bundle productVersion |
 
-### W8-S3 — Buyer documentation
+### W8-S3 — Install documentation
 
 |         |                                                                             |
 | ------- | --------------------------------------------------------------------------- |
 | Status  | `done`                                                                      |
 | Stories | P0-38                                                                       |
-| Files   | `docs/quick-start.md` and the rest of the buyer set; `docs/README.md` index |
+| Files   | `docs/quick-start.md` and the rest of the install set; `docs/README.md` index |
 
 ### W8-S4 — Demo polish
 

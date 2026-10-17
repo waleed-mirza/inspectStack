@@ -2,7 +2,7 @@
 
 Specify pack plus the open-source project. The app and the MIT landing share the **dev** Netlify host.
 
-## Buyer set (Week 8–9)
+## Install and operate (Week 8–9)
 
 Start here: **[Quick Start](quick-start.md)** (native local, under 20 minutes).
 
@@ -32,7 +32,7 @@ Start here: **[Quick Start](quick-start.md)** (native local, under 20 minutes).
 
 | Doc                                 | What it freezes                                      |
 | ----------------------------------- | ---------------------------------------------------- |
-| [PRD](prd.md)                       | Positioning, buyers, non-goals, launch definition    |
+| [PRD](prd.md)                       | Positioning, audience, non-goals, launch definition  |
 | [Workflows](workflows.md)           | Six primary happy paths and states                   |
 | [Wireframes](wireframes/index.html) | Clickable low-fi                                     |
 | [ADRs](adrs/README.md)              | Tenancy, storage, auth, PDF, offline, pins, Supabase |

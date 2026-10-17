@@ -29,7 +29,7 @@ Those scripts are `IF NOT EXISTS` and go through the Drizzle/postgres.js client.
 
 ## Rules
 
-- Never edit a file that may already be applied on **dev** or a buyer database.
+- Never edit a file that may already be applied on **dev** or an operator database.
 - New change = new timestamped file.
 - Drizzle `pnpm db:generate` is optional helper output; ship SQL that matches `packages/db/src/schema.ts`.
 - Seed (`pnpm db:reset`) is **data**, not schema. Do not use reset as a migration tool on a customer database.
